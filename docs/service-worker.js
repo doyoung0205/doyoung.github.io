@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/doyoung0205.github.io/precache-manifest.b5cc4676eeecda93575c2a18935ef567.js"
+  "/doyoung0205.github.io/precache-manifest.6cf2c2f2271285dd8acc6b237d2f9f44.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "doyoung0205.github.io"});
