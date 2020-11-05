@@ -21,6 +21,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - name: pre build
+        run: yarn
       - name: Build
         run: yarn build
         env:
