@@ -1,21 +1,18 @@
 <template>
   <div class="wrap">
-    <section id="txt-section" :ref="sectionNames[0]" class="paral-section">
-      <div class="txt-box" :style="txtBoxStyling">
-        <h1 class="title">
-          프로그래머는 애매모한 요구사항을 포착해서 단순한 기계까지도 그것을 잘
-          수행 할 수 있도록 요구사항을 표현하는 방법을 찾으려 노력한다.
-        </h1>
-        <h3 class="author">by Andrew Hunt & David Thomas</h3>
-        <!-- <img src="~@/assets/images/card.png" alt="" style="width: 320px" /> -->
+    <section id="intro-section" :ref="sectionNames[0]" class="paral-section">
+      <div class="intro-box" :style="txtBoxStyling">
+        <div class="intro-bg"></div>
       </div>
     </section>
     <section :ref="sectionNames[1]" class="paral-section">
-      <div class="busniesscard_wrap" :style="busniesscardStyling">
-        <div class="busniesscard_box" :class="rotateDevice">
-          <div class="busniesscard_face front"></div>
-          <div class="busniesscard_face back">
-            <span>Comming Soon.</span>
+      <div class="busniesscard_container" :style="busniesscardStyling">
+        <div class="busniesscard_top_bg"></div>
+        <div class="busniesscard_bottom_bg"></div>
+        <div class="busniesscard_wrap">
+          <div class="busniesscard_box" :class="rotateDevice">
+            <div class="busniesscard_face front"></div>
+            <div class="busniesscard_face back"></div>
           </div>
         </div>
       </div>
@@ -133,3 +130,7 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+@import '~@/assets/scss/site.scss';
+</style>
