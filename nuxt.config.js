@@ -42,8 +42,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    publicPath:
-      process.env.NODE_ENV === 'production' ? '/doyoung0205.github.io/' : '',
+    // publicPath:
+    //   process.env.NODE_ENV === 'production' ? '/doyoung0205.github.io/' : '',
   },
 
   generate: {
