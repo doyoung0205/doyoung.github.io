@@ -7,7 +7,7 @@
           수행 할 수 있도록 요구사항을 표현하는 방법을 찾으려 노력한다.
         </h1>
         <h3 class="author">by Andrew Hunt & David Thomas</h3>
-        <!-- <img src="~@/assets/images/card.png" alt="" /> -->
+        <!-- <img src="~@/assets/images/card.png" alt="" style="width: 320px" /> -->
       </div>
     </section>
     <section :ref="sectionNames[1]" class="paral-section">
@@ -122,6 +122,7 @@ export default {
       })
     },
     setValue() {
+      window.scrollTop = 0
       this.sectionNames.forEach((sectionName, index) => {
         const sectionRef = this.$refs[sectionName]
         this.offsetTop[index] = sectionRef.offsetTop
