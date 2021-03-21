@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'doyoung.github.pages',
+    title: '안녕하세요 김도영입니다.',
     htmlAttrs: {
       lang: 'en',
     },
@@ -17,7 +17,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['~/assets/scss/site.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -43,8 +43,9 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     publicPath:
-      process.env.NODE_ENV === 'production' ? '/doyoung0205.github.io/' : '/',
+      process.env.NODE_ENV === 'production' ? '/doyoung0205.github.io/' : '',
   },
+
   generate: {
     dir: 'docs',
   },
